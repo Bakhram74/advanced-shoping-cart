@@ -1,23 +1,20 @@
 import React from 'react';
 import {Button, Container, Nav, Navbar as NavbarBs, NavLink} from "react-bootstrap"
-import Home from "../pages/Home";
-import Store from "../pages/Store";
-import About from "../pages/About";
 
 const Navbar = () => {
     return (
         <>
         <NavbarBs sticky={'top'} className={'bg-white shadow-sm mb-3'}>
         <Container>
-            <Nav className={'me-auto'}>
-                <Nav.Link to={'/'} as={NavLink}>
-                    <Home/>
+            <Nav className="me-auto">
+                <Nav.Link to="/" as={NavLink}>
+                    Home
                 </Nav.Link>
-                <Nav.Link to={'/store'} as={NavLink}>
-                    <Store/>
+                <Nav.Link to="/store" as={NavLink}>
+                    Store
                 </Nav.Link>
-                <Nav.Link to={'/about'} as={NavLink}>
-                    <About/>
+                <Nav.Link to="/about" as={NavLink}>
+                    About
                 </Nav.Link>
             </Nav>
             <Button style={{width:'3rem', height:'3rem',position:'relative'}} className={'rounded-circle'} variant={'outline-primary'}
